@@ -40,7 +40,7 @@ If you want to host the server, you will need to configure the ip and port of bo
 "v6": 5002,
 ```
 
-Change the ip and port for all of them.
+Change the ip and port with your host's ones.
 
 - Server
 ```py
