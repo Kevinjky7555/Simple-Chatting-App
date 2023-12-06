@@ -18,6 +18,8 @@ Open source python based app for fun to chat with your friends (or yourself)
 - Join any channel upon opening the app
 - Send messages to other people in the same channel as you
 
+![Screenshot](https://cdn.discordapp.com/attachments/861707176064974868/1182032860778090676/image.png)
+
 ## Requirements:
 - Python 3.7 or higher
 - colorama
