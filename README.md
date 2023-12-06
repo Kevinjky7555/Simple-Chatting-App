@@ -50,8 +50,7 @@ v2 = 5001;
 Change the port for the server at line 13.
 
 ## Hosted version
-Alternatively, you can try my hosted version [here](https://discord.com/channels/@me/861707176064974868/1182039082218565782)
-on 
+Alternatively, you can try my hosted version [here](https://cdn.discordapp.com/attachments/861707176064974868/1182039081748791427/App.pyw?ex=65833eae&is=6570c9ae&hm=23565cd5762e6435fe705ebefeea96224e3f1aa5034d5066441fce837c233cdc&)
 
 ## Authors
 
