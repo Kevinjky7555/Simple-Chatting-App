@@ -34,15 +34,13 @@ If you want to host the server, you will need to configure the ip and port of bo
 
 - App
 ```py
-def checkAddress(self, type=None):
-        if (type != None):
-            if (type == 0):
-                if (self.var['v3'] == "127.0.0.1"): # IP the app should connect to
-                    if (self.var['v5'] == 5001): # Port
-                        return True
+"v3": "127.0.0.1",
+"v4": "127.0.0.1",
+"v5": 5001,
+"v6": 5002,
 ```
 
-Change the ip and port for all of them that appear starting from line 230.
+Change the ip and port for all of them.
 
 - Server
 ```py
