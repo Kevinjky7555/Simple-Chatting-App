@@ -230,8 +230,8 @@ class MainWindow():
     def checkAddress(self, type=None):
         if (type != None):
             if (type == 0):
-                if (self.var['v3'] == "127.0.0.1"):
-                    if (self.var['v5'] == 5001):
+                if (self.var['v3'] == "127.0.0.1"): # IP the app should connect to
+                    if (self.var['v5'] == 5001): # Port
                         return True
                     else:
                         return False
@@ -239,8 +239,8 @@ class MainWindow():
                     return False
             elif (type == 1):
                 if (self.var['v1']):
-                    if (self.var['v4'] == "127.0.0.1"):
-                        if(self.var['v6'] == 5002):
+                    if (self.var['v4'] == "127.0.0.1"): # IP the app should connect to
+                        if(self.var['v6'] == 5002): # Port
                             return True
                         else:
                             return False
@@ -252,8 +252,8 @@ class MainWindow():
                 return False
         else:
             if (self.var['v1']):
-                if (self.var['v4'] == "127.0.0.1"):
-                    if(self.var['v6'] == 5002):
+                if (self.var['v4'] == "127.0.0.1"): # IP the app should connect to
+                    if(self.var['v6'] == 5002): # Port
                         return True
                     else:
                         return False
@@ -261,7 +261,7 @@ class MainWindow():
                     return False
             else:
                 if (self.var['v3'] == "127.0.0.1"):
-                    if (self.var['v5'] == 5001):
+                    if (self.var['v5'] == 5001): # Port
                         return True
                     else:
                         return False
