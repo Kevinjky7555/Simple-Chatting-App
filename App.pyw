@@ -164,7 +164,7 @@ class MainWindow():
         numbers = string.digits
         fname = "".join(secrets.choice(numbers) for i in range(4))
         
-        i1 = self.a2.get().lower();
+        i1 = self.a2.get();
         i2 = self.a4.get().lower();
 
         if i1 == "":
