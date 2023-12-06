@@ -25,6 +25,8 @@ Open source python based app for fun to chat with your friends (or yourself)
 ## Running the server
 In a terminal, type __`pip install -r requirements.txt`__ then __`python Server.py`__
 
+![Screenshot](https://cdn.discordapp.com/attachments/861707176064974868/1182032559580917871/image.png)
+
 ## Authors
 
 👤 **Kevin** (main developer)
