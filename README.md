@@ -11,7 +11,7 @@
 
 Open source python based app for fun to chat with your friends (or yourself)
 
-[Screenshot]([https://cdn.discordapp.com/attachments/861707176064974868/1182027029244284988/image.png?ex=65833374&is=6570be74&hm=d5220dc23e9548d5363ef9f076676da957898701ba5135ff7e2600b63591a3b9&)
+[Screenshot]([https://media.discordapp.net/attachments/861707176064974868/1182027029244284988/image.png)
 
 ### What's working?
 - Setting your own username
