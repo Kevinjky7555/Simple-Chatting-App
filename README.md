@@ -33,7 +33,7 @@ In a terminal, type __`pip install -r requirements.txt`__ then __`python Server.
 * Discord: kevinjky7555
 
 Special thanks to:
-- lwitchy
+* lwitchy
 
 ### Need help?
 Add me on [Discord](kevinjky7555)
