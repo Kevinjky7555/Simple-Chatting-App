@@ -29,18 +29,27 @@ In a terminal, type __`pip install -r requirements.txt`__ then __`python Server.
 
 ![Screenshot](https://cdn.discordapp.com/attachments/861707176064974868/1182032559580917871/image.png)
 
-## Configuring app
+## Configuring host
 If you want to host the server, you will need to configure the ip and port of both server and app.
 
 - App
-![Screenshot](https://cdn.discordapp.com/attachments/861707176064974868/1182034800530440262/image.png)
+```py
+def checkAddress(self, type=None):
+        if (type != None):
+            if (type == 0):
+                if (self.var['v3'] == "127.0.0.1"): # IP the app should connect to
+                    if (self.var['v5'] == 5001): # Port
+                        return True
+```
 
-Change the ip and port for all of them that appear starting from there.
+Change the ip and port for all of them that appear starting from line 230.
 
 - Server
-![Screenshot](https://cdn.discordapp.com/attachments/861707176064974868/1182035142378803220/image.png)
+```py
+v2 = 5001;
+```
 
-Change the port for the server there.
+Change the port for the server at line 13.
 
 ## Authors
 
