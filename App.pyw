@@ -8,7 +8,7 @@ class MainWindow():
     def __init__(self) -> None:
         self.server = socket.socket();
         self.root = Tk();
-        self.root.title("Simple Chatting - V1.1");
+        self.root.title("Simple Chatting - V1.2");
         self.root.resizable(0,0);
 
         self.var = {
@@ -32,7 +32,7 @@ class MainWindow():
             "v17": "About",
             "v18": "Guest",
             "v19": 0,
-            "v20": "Version 1.1 - Simple Chat Application\nJoin rooms with IDs and start chatting!",
+            "v20": "Version 1.2 - Simple Chat Application\nJoin rooms with IDs and start chatting!",
         };
 
 
@@ -172,12 +172,16 @@ class MainWindow():
         else:
             self.var['v18'] = i1
         
-        self.var['v19'] = i2
+        if i2 == "0":
+            self.var['v19'] = "0"
+        else:
+            self.var['v19'] = i2
+
         data = f"/login~{self.var['v18']}~{i2}"
         self.server.send(data.encode())
         self.var['v0'] = True
         self.destroyElements()
-        self.root.title(f"Simple Chatting - V1.1, username: {self.var['v18']}");
+        self.root.title(f"Simple Chatting - V1.2, username: {self.var['v18']}");
         self.msgBox("Welcome", "Have fun chatting!")
         self.win()
 
