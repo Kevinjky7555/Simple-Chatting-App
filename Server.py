@@ -53,8 +53,11 @@ def listenClients(x1,x2):
                 channelData[f'{channel}']['userADDR'].append(x1)
                 
                 for x in channelData[f'{channel}']['userADDR']:
+                    if channel == "":
+                        channel = "0"
+
                     x.send(f"{username} joined the channel!\n".encode())
-                    print(f"{Helpers.blue}[CLIENT] Received packet, ID: 3201, Name: joinChannel");
+                    print(f"{Helpers.blue}[CLIENT] Received packet, ID: 3201, Name: joinChannel, Channel: {channel}");
                     print(f"{Helpers.yellow}[CLIENT] {v6} username set '{username}'");
             else:
                 message_content = split[0]
@@ -63,7 +66,7 @@ def listenClients(x1,x2):
                 
                 for x in channelData[f'{channel_id}']['userADDR']:
                     x.send(f"{encrypted_content}\n".encode())
-                    print(f"{Helpers.blue}[CLIENT] Received packet, ID: 2048, Name: sendMessage");
+                    print(f"{Helpers.blue}[CLIENT] Received packet, ID: 2048, Name: sendMessage, Contents: {encrypted_content}, Client: {v6}");
         except Exception as e:
             try:
                 channelData[f'{channel}']['userADDR'].remove(x1)
